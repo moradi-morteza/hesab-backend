@@ -1,5 +1,7 @@
 <?php
 
+use Core\CoreServiceProvider;
+
 return [
 
     /*
@@ -67,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tehran',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fa_IR',
 
     /*
     |--------------------------------------------------------------------------
@@ -139,6 +141,10 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+
+        CoreServiceProvider::class,
+
+
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,

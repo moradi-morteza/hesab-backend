@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import '../css/custom.css';
+
+
+// FontAwesome  V:5.13
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Bootstrap Select
+@import "~bootstrap-select/sass/bootstrap-select";
+
+// Animation css
+@import "~animate.css/animate";
+
+// Vuejs Tag Input
+@import "~@voerro/vue-tagsinput/dist/style.css";
+
+@import '~vue2-dropzone/dist/vue2Dropzone.min.css';
+
+@import "~vue-simple-suggest/dist/styles.css";
+
+@import "~choices.js/public/assets/styles/choices.min.css";

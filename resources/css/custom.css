@@ -1,0 +1,253 @@
+
+
+.enfont{
+    font-family: Ubuntu!important;
+}
+/* Below Related to [dropzone] vuejs component styles*/
+.hover {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Below Related to [tags-input] vuejs component styles*/
+.typeahead-badges{
+    padding-top: 15px!important;
+}
+.tags-input-badge-pill{
+    font-size: 95%!important;
+    margin: 5px!important;
+}
+.tags-input-typeahead-item-highlighted-default{
+    font-size: 75%!important;
+    margin: 2px!important;
+}
+.tags-input-typeahead-item-default{
+    font-size: 75%!important;
+    margin: 2px!important;
+}
+.tags-input-typeahead-item-default{
+    font-size: 75%!important;
+    margin: 2px!important;
+}
+
+/* Enter and leave animations can use different durations and timing functions. */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+/* Remove up and down button form input number * Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Change tables */
+.table{--falcon-table-striped-bg: rgba(237, 242, 251, 0.57) !important;
+}
+td{
+    white-space:nowrap!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.page-item:not(:first-child) .page-link{
+    border: 1px solid rgba(0, 0, 0, 0.48);
+}
+.page-item:first-child .page-link {
+    border: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+
+
+/* Change sweet alert */
+.swal2-container {
+    z-index: 25000!important;
+}
+.modal-backdrop {
+    margin: 0!important;
+    padding: 0!important;
+    background-color: rgb(0, 0, 0) !important;
+}
+.swal2-center{
+    background-color: rgba(28, 28, 28, 0.81) !important;
+}
+.swal2-title{
+    color: black;
+    font-size: 18px!important;
+    font-weight: bold!important;
+}
+.swal2-content{
+    color: #404040;
+    font-size: 15px!important;
+}
+.swal2-input{
+    direction: ltr!important;
+    text-align: left!important;
+}
+
+/* Vue Pagination*/
+.VuePagination{
+    width: 100%;
+    margin: 0!important;
+    padding: 0!important;
+    display: inline-block!important;
+
+}
+.VuePagination nav{
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+}
+.VuePagination__pagination{
+    /*transform: scale(0.8); !* Equal to scaleX(0.7) scaleY(0.7) *!*/
+    margin-top: 0!important;
+    margin-bottom:  0!important;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 12px!important;
+    padding: 0!important;
+    display: inline-flex;
+    float: left;
+}
+.VuePagination__count{
+    float: right;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.page-link{
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* Other */
+.dirltr{
+    direction: ltr!important;
+}
+.error{
+    color: red;
+}
+.dropdown-indicator span{
+    color: #3b3b3b!important;
+}
+.noHover{
+    pointer-events: none;
+}
+.text-badge {
+    font-size: 13px;
+    color: lightgray;
+}
+.modal{
+    padding: 0!important;
+}
+.hoverable:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+.cardhoverable:hover{
+    cursor: pointer;
+    color: #1d7fc4;
+}
+.btn-add-in-dashboard-card{
+    z-index: 5;
+    bottom:15px;
+    right: 15px;
+    opacity:0.6;
+}
+.btn-add-in-dashboard-card:hover{
+    opacity:1;
+}
+.form-select{
+    font-size: 0.9rem!important;
+}
+.a-normal{
+    text-decoration: none!important;
+    color: inherit!important;
+}
+.a-normal:hover{
+    color: black!important;
+}
+.sortable:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #209ce3;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+body{
+    margin: 0!important;
+    padding: 0!important;
+    overflow-y: scroll !important;
+}
+.bottom-sheet__backdrop[data-v-6fad203c]{
+    background-color: rgba(28, 28, 28, 0.81) !important;
+}
+.vue-image-crop-upload{
+    background-color: rgba(43, 43, 43, 0.91) !important;
+}
+.form-check-input-absent:checked {
+    background-color: #e52c3e;
+    border-color: #e52c3e;
+}
+.form-check-input-justify:checked {
+    background-color: #14b344;
+    border-color:  #14b344;
+}
+
+.dropzone-container{
+    text-align: center !important;
+    align-content: center !important;
+    align-items: center !important;
+}
+.dropdown-item:hover{
+    cursor: pointer!important;
+}
+
+
+.tr_hover_text:hover {color: #0058ff !important;}
+.tr_hover_text:hover .fw-bold{color: #0058ff !important;}
+
+.tr_hover_back:hover {background-color: rgba(164, 164, 164, 0.18) !important;}
+.tr_hover_back:hover .fw-bold{color: #0058ff !important;}
+
+.choices__item--selectable{
+    padding-right:25px!important;
+}
+
+.bold-black{
+    font-weight: bold;
+    color: black;
+    size: 15px;
+}
+.width-auto{
+    width: auto!important;
+}
