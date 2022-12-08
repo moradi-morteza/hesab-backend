@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
-use Spatie\Permission\Models\Permission;
 
 class UserTableSeeder extends Seeder
 {
@@ -21,7 +20,7 @@ class UserTableSeeder extends Seeder
                 'mobile' => '09191234567',
                 'gender' => 'male',
                 'email' => 'admin@gmail.com',
-                'type' => 'staff',
+                'type' => 'admin',
                 'password' => bcrypt('admin'),
             ]);
 //            $admin->assignRole('admin');
@@ -39,7 +38,7 @@ class UserTableSeeder extends Seeder
                 'gender' => 'male',
                 'mobile' => '09191234573',
                 'email' => 'javad.hosseini@gmail.com',
-                'type' => 'customer',
+                'type' => 'app',
                 'password' => bcrypt('javad.hosseini'),
             ]);
             User::query()->create([
@@ -49,7 +48,7 @@ class UserTableSeeder extends Seeder
                 'gender' => 'female',
                 'mobile' => '09191234574',
                 'email' => 'zahra.sedaghat@gmail.com',
-                'type' => 'customer',
+                'type' => 'app',
                 'password' => bcrypt('zahra.sedaghat'),
             ]);
             User::query()->create([
@@ -59,7 +58,7 @@ class UserTableSeeder extends Seeder
                 'gender' => 'male',
                 'mobile' => '09191234575',
                 'email' => 'abbas.hosseini@gmail.com',
-                'type' => 'customer',
+                'type' => 'app',
                 'password' => bcrypt('abbas.hosseini'),
             ]);
             User::query()->create([
@@ -69,7 +68,7 @@ class UserTableSeeder extends Seeder
                 'gender' => 'female',
                 'mobile' => '09191234576',
                 'email' => 'targol.bakhtiari@gmail.com',
-                'type' => 'customer',
+                'type' => 'app',
                 'password' => bcrypt('targol.bakhtiari'),
             ]);
             User::query()->create([
@@ -79,7 +78,7 @@ class UserTableSeeder extends Seeder
                 'gender' => 'male',
                 'mobile' => '09191234577',
                 'email' => 'hossein.mardani@gmail.com',
-                'type' => 'customer',
+                'type' => 'app',
                 'password' => bcrypt('hossein.mardani'),
             ]);
             User::query()->create([
@@ -89,7 +88,7 @@ class UserTableSeeder extends Seeder
                 'gender' => 'male',
                 'mobile' => '09191234578',
                 'email' => 'korosh.tehrani@gmail.com',
-                'type' => 'customer',
+                'type' => 'app',
                 'password' => bcrypt('korosh.tehrani'),
             ]);
         }else{
@@ -100,7 +99,7 @@ class UserTableSeeder extends Seeder
                 'mobile' => '09191234567',
                 'gender' => 'male',
                 'email' => 'admin@gmail.com',
-                'type' => 'staff',
+                'type' => 'admin',
                 'password' => bcrypt('admin'),
             ]);
 //            $admin->assignRole('admin');

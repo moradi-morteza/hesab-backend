@@ -1,14 +1,17 @@
 <?php
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Modules\stimulsoft\Controllers\StimulsoftController;
 
-Auth::routes([
-    'register' => false, // Registration Routes...
-    'verify' => false,   // Email Verification Routes...
-]);
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/home', [HomeController::class, 'home'])->name('home');
-Route::get('/develop', [HomeController::class, 'develop'])->name('develop');
-Route::get('/{any}', [HomeController::class, 'index'])->where('any', '.*');
+Auth::routes();
+
+
+Route::get('/', [PageController::class, 'index']);
+
+Route::get('/app', [PageController::class, 'index'])->name('app');
+Route::get('/app/{any}', [PageController::class, 'app'])->where('any', '.*');
+
+Route::get('/admin', [PageController::class, 'admin'])->name('app');
+Route::get('/admin/{any}', [PageController::class, 'admin'])->where('any', '.*');
+
+Route::get('/develop', [PageController::class, 'develop'])->name('develop');

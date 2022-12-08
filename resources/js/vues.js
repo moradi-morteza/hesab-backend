@@ -16,19 +16,22 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 let routes = [
 
-    {path: '/', component: require('../../modules/core/Resources/js/components/home.vue').default},
+    {path: '*', component: require('../../modules/core/Resources/js/components/404').default},
+    {path: '/', component: require('../../modules/core/Resources/js/components/app/home.vue').default},
     {path: '/test-vue', component: require('./components/develop/test-vue.vue').default},
 
 ];
 
 // add modules route to routes variable
-import {coreModulesRoutes} from '../../modules/core/Resources/js/app'
+import {appModulesRoutes} from '../../modules/core/Resources/js/app'
+import {adminModulesRoutes} from '../../modules/core/Resources/js/admin'
 // import {orderModulesRoutes} from '../../modules/order/Resources/js/app'
 // import {repairManModulesRoutes} from '../../modules/repairman/Resources/js/app'
 // import {storeModulesRoutes} from "../../modules/store/Resources/js/app";
 // import {requirementModulesRoutes} from "../../modules/requirement/Resources/js/app";
 
-routes = routes.concat(coreModulesRoutes);
+routes = routes.concat(appModulesRoutes);
+routes = routes.concat(adminModulesRoutes);
 // routes = routes.concat(orderModulesRoutes);
 // routes = routes.concat(storeModulesRoutes);
 // routes = routes.concat(repairManModulesRoutes);

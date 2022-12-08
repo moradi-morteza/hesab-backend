@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use App\Exporter;
 use Maatwebsite\Excel\Facades\Excel;
 
-class HomeController extends Controller
+class PageController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth')->except(['index']);
+    }
+
+    public function admin(){
+        return view('admin');
     }
 
     public function index()
@@ -17,9 +21,9 @@ class HomeController extends Controller
         return view('welcome');
     }
 
-    public function home()
+    public function app()
     {
-        return view('home');
+        return view('app');
     }
 
     public function develop()

@@ -1,3 +1,10 @@
+<?php
+use Illuminate\Support\Facades\Auth;
+if(Auth::user()->type!="admin"){
+    echo "You Do not Have Access.";
+    return false;
+}
+?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
