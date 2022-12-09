@@ -9,7 +9,11 @@ class PageController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index']);
+        $this->middleware('auth')->except(['index','loginAdmin']);
+    }
+
+    public function loginAdmin(){
+        return view('auth.login-admin');
     }
 
     public function admin(){

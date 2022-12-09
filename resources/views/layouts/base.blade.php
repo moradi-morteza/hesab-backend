@@ -24,6 +24,7 @@
     <script src="{{asset('template/assets/js/config.js')}}"></script>
     <script src="{{asset('template/vendors/overlayscrollbars/OverlayScrollbars.min.js')}}"></script>
 
+    @yield("css")
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
@@ -78,6 +79,8 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
 <script src="{{asset('template/vendors/list.js/list.min.js')}}"></script>
 <script src="{{asset('template/assets/js/theme.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
+@stack('js')
 </body>
 
 </html>

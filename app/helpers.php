@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
 use Intervention\Image\Facades\Image;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromArray;
@@ -170,23 +171,14 @@ function time_elapsed_string($datetime, $full = false) {
     return $string ? implode(', ', $string) . ' قبل' : 'لحظاتی قبل';
 }
 
-function get_name_order_priority($priority){
-    switch ($priority){
-        case '1':
-            return "اولویت اورژانسی";
-        case '2':
-            return "اولویت نرمال";
-        case '3':
-            return "اولویت پایین";
-
-        default:
-            return "نامشخص";
-    }
-}
-
 function unique_code($limit)
 {
     return substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $limit);
+}
+
+function sendSmsToMobile($mobile,$code){
+    // TODO : Complete Here
+    Log::info("code $code send to $mobile");
 }
 
 

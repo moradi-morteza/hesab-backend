@@ -241,9 +241,9 @@ if(Auth::user()->type!="admin"){
     window._asset = '{{ asset('') }}';
     window.Laravel = {
         csrfToken: "{{ csrf_token() }}",
-        jsPermissions: {!! auth()->check()?auth()->user()->jsPermissions():0 !!}
+        {{--jsPermissions: {!! auth()->check()?auth()->user()->jsPermissions():0 !!}--}}
     }
-    console.log(Laravel.jsPermissions)
+    // console.log(Laravel.jsPermissions)
 </script>
 <script src="{{asset('js/persian-date.min.js')}}"></script>
 <script src="{{asset('js/persian-datepicker.min.js')}}"></script>

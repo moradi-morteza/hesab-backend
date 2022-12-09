@@ -2,3 +2,7 @@
     cursor: pointer;
     opacity: 70%;
 }
+
+.bg-auth-circle-shape {
+    top: -3.125rem;
+}
